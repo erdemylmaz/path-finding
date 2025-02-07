@@ -159,7 +159,7 @@ function findHeuristic(cell, stepCount) {
     const endDistanceX = Math.abs(cell.col - endCell.col);
     const endDistanceY = Math.abs(cell.row - endCell.row);
 
-    return endDistanceX + endDistanceY + stepCount;
+    return endDistanceX + endDistanceY; // + stepCount;
 }
 
 function findPossibilities(cell, stepCount) {
